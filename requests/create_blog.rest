@@ -1,0 +1,9 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+  "title": "A Cloud Guru",
+  "author": "Ryan K",
+  "url": "https://acloudguru.com/blog/engineering/conditions-in-bash-scripting-if-statements",
+  "likes": 32
+}
