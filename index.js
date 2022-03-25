@@ -29,8 +29,7 @@ blogSchema.set('toJSON', {
 
 const Blog = mongoose.model('Blog', blogSchema)
 
-const mongoUrl =
-  'mongodb+srv://sebatorres:ofuSY9XZaKRLEcGw@fso2022.iybpv.mongodb.net/blogApp?retryWrites=true&w=majority'
+const mongoUrl = process.env.MONGODB_URI
 mongoose.connect(mongoUrl)
 
 app.use(cors())
